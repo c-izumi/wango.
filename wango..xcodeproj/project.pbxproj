@@ -15,6 +15,8 @@
 		B4533A162478CFD00056FE4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4533A142478CFD00056FE4D /* LaunchScreen.storyboard */; };
 		B4533A212478CFD00056FE4D /* wango_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4533A202478CFD00056FE4D /* wango_Tests.swift */; };
 		B4533A2C2478CFD00056FE4D /* wango_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4533A2B2478CFD00056FE4D /* wango_UITests.swift */; };
+		B4533A3A2478F6130056FE4D /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4533A392478F6130056FE4D /* ListTableViewController.swift */; };
+		B4533A3C2478F62D0056FE4D /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4533A3B2478F62D0056FE4D /* AddViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		B4533A272478CFD00056FE4D /* wango.UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wango.UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4533A2B2478CFD00056FE4D /* wango_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wango_UITests.swift; sourceTree = "<group>"; };
 		B4533A2D2478CFD00056FE4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4533A392478F6130056FE4D /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
+		B4533A3B2478F62D0056FE4D /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				B4533A122478CFD00056FE4D /* Assets.xcassets */,
 				B4533A142478CFD00056FE4D /* LaunchScreen.storyboard */,
 				B4533A172478CFD00056FE4D /* Info.plist */,
+				B4533A392478F6130056FE4D /* ListTableViewController.swift */,
+				B4533A3B2478F62D0056FE4D /* AddViewController.swift */,
 			);
 			path = wango.;
 			sourceTree = "<group>";
@@ -259,9 +265,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4533A3C2478F62D0056FE4D /* AddViewController.swift in Sources */,
 				B4533A0E2478CFCE0056FE4D /* ViewController.swift in Sources */,
 				B4533A0A2478CFCE0056FE4D /* AppDelegate.swift in Sources */,
 				B4533A0C2478CFCE0056FE4D /* SceneDelegate.swift in Sources */,
+				B4533A3A2478F6130056FE4D /* ListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,14 +442,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1.0.3;
+				DEVELOPMENT_TEAM = 2K446D59RQ;
 				INFOPLIST_FILE = wango./Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "app.zu-mi-.izumi.wango-";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.lifeistech.wango;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "L12ChigusaIzumi-Distribution";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -451,14 +463,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1.0.3;
+				DEVELOPMENT_TEAM = 2K446D59RQ;
 				INFOPLIST_FILE = wango./Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "app.zu-mi-.izumi.wango-";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.lifeistech.wango;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "L12ChigusaIzumi-Distribution";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
